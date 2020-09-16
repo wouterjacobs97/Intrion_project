@@ -1,1 +1,5 @@
-# Intrion_project
+Deze console applicatie simuleert iets gelijkaardig zoals in de opdracht bij het testje. De id van de scanner die iets scant (in het begin zijn er enkel printers met id = 0 (werkt met het UDP protocol) en id = 1 (werkt met het TCP protocol). Hierna wordt gevraagd om de gescande code in te geven. Als alles goed gaat zal in het log bestand (log.txt) te zien zijn welke scanner welke code gescand heeft en welk protocol in werking getreden is. Als een id ingegeven wordt dat niet bestaad wordt gevraagd of er een extra printer toegevoegd moet worden, zo ja moet men een id en het gebruikte protocol (UDP of TCP) invullen en kan de printer vervolgens gebruikt worden. 
+
+De logger werkt via het singleton patroon, de protocols via het factory patroon. Hier is het dus ook gemakkelijk om in de code een extra protocol toe te voegen. De ScannerController bevat gewoon een lijst van actieve scanners. De protocols en de scanner objecten bevatten een logger object.
+
+Pad "log.txt" file --> bin/Debug/netcoreapp3.1/log.txt
